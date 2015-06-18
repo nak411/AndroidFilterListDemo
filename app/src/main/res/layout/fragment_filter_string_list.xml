@@ -5,10 +5,10 @@
     android:orientation="vertical"
     tools:context="com.example.wzl200.filterlistdemo.fragments.FilterListFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ListView
+        android:id="@+id/lv_items"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content">
+    </ListView>
 
 </LinearLayout>
