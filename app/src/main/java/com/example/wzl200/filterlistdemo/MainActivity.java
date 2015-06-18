@@ -12,11 +12,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setContentView(R.layout.activity_main_layout);
         //Add content fragment
         if (savedInstanceState == null) {
             FragmentManager fm = getSupportFragmentManager();
-            fm.beginTransaction().add(android.R.id.content, FilterListFragment.newInstance()).commit();
+            fm.beginTransaction().replace(R.id.container, FilterListFragment.newInstance()).commit();
         }
     }
 }
