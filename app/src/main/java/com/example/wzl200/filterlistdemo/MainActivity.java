@@ -13,9 +13,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        //Add content fragment
         if (savedInstanceState == null) {
             FragmentManager fm = getSupportFragmentManager();
-            fm.beginTransaction().add(android.R.id.content, FilterListFragment.newInstance());
+            fm.beginTransaction().add(android.R.id.content, FilterListFragment.newInstance()).commit();
         }
     }
 }
